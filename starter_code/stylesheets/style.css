@@ -77,7 +77,7 @@ header strong {
     color: white;
     height: 60px;
     font-size: 18px;
-   display: inline-flex;
+    display: inline-flex;
     align-items: center;
     border: none;
     justify-content: center;
@@ -93,30 +93,16 @@ header strong {
 }
 
 #google-button span {
-    display: inline-flex;
-    
+    display: inline-flex; 
     justify-content: center;
-}
-
-#section-image-hero {
-    width: 100vw;
-    overflow: hidden;
-}
-
-
-#hero-product-ui {
-    height: 450px;
-    margin-top: 20px;
-    margin-left: -35px;
-    margin-bottom: -90px;
 }
 
 #main-section-1 {
     background-color: #F3EAE2;
+    padding-top: 50px;
 }
 
 #main-section-1 p {
-    padding-top: 40px;
     text-align: center;
     font-size: 19px;
     font-weight: 700;
@@ -139,21 +125,13 @@ header strong {
     background-color: #F3EAE2;
 }
 
-
-#image-section-2, #image-section-4 {
-    width: 96vw;
-}
-
 h2 {
     font-size: 30px;
-    padding-left: 15px;
     color: #191817;
 }
 
 #main-section-2 p, #main-section-3 p, #main-section-4 p {
-    font-size: 18px;
-    padding-left: 15px;
-    padding-right: 30px;
+    font-size: 17px;
     line-height: 1.5;
     font-weight: 550;
     color: #000000;
@@ -169,7 +147,6 @@ h2 {
 #main-section-2 span, #main-section-3 span, #main-section-4 span {
     color: #2E71A6;
     font-weight: 550;
-    padding-left: 15px;
 }
 
 #icon-arrow-right {
@@ -186,13 +163,6 @@ h2 {
     display: inline-block;    
 }
 
-#image-section-3 {
-    width: 96vw;
-    padding-left: 18px;
-    padding-right: 0px;
-    justify-content: flex-end;
-    padding-top: 50px;
-}
 
 #main-section-4 {
     background-color: #F3EAE2;
@@ -225,26 +195,21 @@ h2 {
 }
 
 main button {
-    display: block;
-    width: 90vw;
     height: 60px;
     margin: auto;
     justify-content: center;
     margin-bottom: 15px;
+    font-size: 17px;
 }
 
-.main-button-1 {
+.main-button-type-1 {
     background-color: #540B51;
     color: white;
-    margin-bottom: 15px;
-    font-size: 18px;
     border: none;
 }
 
-.main-button-2 {
+.main-button-type-2 {
     color: #540B51;
-    margin-bottom: 15px;
-    font-size: 18px;
     border: 2px solid #540B51;
     background-color: transparent;
 }
@@ -308,12 +273,12 @@ main button {
 }
 
 
-#main-section-6 .main-button-1 {
+#main-section-6 .main-button-type-1 {
     border: 2px solid white;
 }
 
 
-#main-section-6 .main-button-2 {
+#main-section-6 .main-button-type-2 {
     background-color: white;
 }
 
@@ -421,6 +386,48 @@ footer hr {
     header p {
         text-align: center;
     }
+    
+    #section-image-hero {
+        width: 100vw;
+        overflow: hidden;
+    }
+    
+    #hero-product-ui {
+        height: 450px;
+        margin-top: 20px;
+        margin-left: -35px;
+        margin-bottom: -90px;
+    }
+
+    #image-section-2-mobile, #image-section-4-mobile {
+        width: 96vw;
+    }
+    
+    #image-section-3-mobile {
+        width: 96vw;
+        padding-left: 4vw;
+        padding-right: 0px;
+        justify-content: flex-end;
+        padding-top: 50px;
+    }
+
+    #image-section-2-screen, #image-section-3-screen, #image-section-4-screen {
+        display: none;
+    }
+    
+    .main-section-article {
+        padding-left: 15px;
+    }
+
+    #main-section-2 p, #main-section-3 p, #main-section-4 p {
+        padding-right: 30px;
+    }
+
+    main button {
+        display: block;
+        width: 90vw;
+    }
+
 
 }
 
@@ -434,15 +441,114 @@ footer hr {
     #nav-menu {
     display: none;
     }
+
+    header {
+        background-image: url("/starter_code/images/background-singup.png");
+        background-size: 180%;
+        background-repeat: no-repeat;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+
+    #header-title {
+        font-size: 78px;
+        padding-left: 30px;
+        margin-right: 20px;
+        width: calc(60vw - 60px);
+    }
+
+    header p {
+        font-size: 22px;
+        padding: 0px 30px;
+        width: 350px;
+    }
+
+    #section-image-hero {
+        width: 36vw;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+    }
+
+    #hero-product-ui {
+        height: 350px;
+    }
+
+    #sign-button {
+        padding: 0px 20px 100px 30px;
+    }
+
+    #google-logo {
+        left: 40px;
+    }
+
+    #image-section-2-mobile, #image-section-3-mobile, #image-section-4-mobile {
+        display: none;
+    }
+
+    #image-section-2-screen, #image-section-4-screen {
+        width: 90vw;
+    }
+
+    #image-section-3-screen {
+        width: 90vw;
+        padding-left: 10vw;
+        padding-right: 0px;
+        justify-content: flex-end;
+        padding-top: 50px;
+    }
+
+    .main-section-article {
+        padding-left: 130px;
+    }
+
+    h2 {
+        padding-right: 100px;
+    }
+
+    #main-section-2 p, #main-section-3 p, #main-section-4 p {
+        padding-right: 130px;
+    }
+
+    #main-button-first {
+        display: inline-block;
+        justify-content: center;
+        
+    }
+
+
 }
 
 /* Medium Screens */
 @media (min-width: 1024px) and (max-width: 1439px) {
 
+    header {
+        background-image: url("/starter_code/images/background-singup.png");
+        background-size: 180%;
+        background-repeat: no-repeat;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    #image-section-2-mobile, #image-section-3-mobile, #image-section-4-mobile {
+        display: none;
+        }
+
+
 }
 
 /* Large Screens */
 @media (min-width: 1440px) {
+
+    #image-section-2-mobile, #image-section-3-mobile, #image-section-4-mobile {
+        display: none;
+        }
+
 
 }
 
